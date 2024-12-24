@@ -1,0 +1,196 @@
+/* General Plugin Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #2a2a2a;
+}
+
+/* Admin Menu */
+#adminmenu {
+    background-color: #333;
+}
+
+#adminmenu a {
+    color: #fff !important;
+}
+
+#adminmenu li.menu-top:hover {
+    background-color: #444;
+}
+
+/* Admin Page Styles */
+.wrap {
+    max-width: 90%;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.wrap h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Product Form Fields */
+.form-table {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-table th {
+    padding: 12px 20px;
+    text-align: left;
+    width: 200px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form-table td {
+    padding: 12px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="number"],
+.form-table select,
+.form-table textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.form-table input[type="number"]:focus,
+.form-table select:focus,
+.form-table input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Product Search Form */
+.eiliyah-product-search-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.eiliyah-product-search-form input[type="text"],
+.eiliyah-product-search-form input[type="number"],
+.eiliyah-product-search-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.eiliyah-product-search-form input[type="text"]:focus,
+.eiliyah-product-search-form input[type="number"]:focus,
+.eiliyah-product-search-form select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.eiliyah-product-search-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.eiliyah-product-search-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Table of Products in Admin */
+table.wp-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.wp-list-table th,
+table.wp-list-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table.wp-list-table th {
+    background-color: #f7f7f7;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+table.wp-list-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+table.wp-list-table td {
+    font-size: 1rem;
+}
+
+table.wp-list-table .check-column input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Buttons */
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Alerts / Notifications */
+.notice {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.notice.updated {
+    background-color: #2ecc71;
+}
+
+.notice.info {
+    background-color: #3498db;
+}
+
+.notice .notice-title {
+    font-weight: bold;
+}
