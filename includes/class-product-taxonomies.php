@@ -31,7 +31,7 @@ class Product_Taxonomies
                     'name'              => _x('Product Tags', 'taxonomy general name', 'advanced-product-manager'),
                     'singular_name'     => _x('Product Tag', 'taxonomy singular name', 'advanced-product-manager'),
                 ),
-                'hierarchical'          => false,
+                'hierarchical'          => true,
             )
         );
     }
