@@ -10,6 +10,7 @@ class Product_Manager
         $this->init_columns();
         $this->init_filters();
         $this->init_admin_settings();
+        // $this->init_admin_faultyStocks();
     }
 
     private function init_post_type()
@@ -29,8 +30,8 @@ class Product_Manager
     private function init_meta_boxes()
     {
         // Corrected file path
-        require_once plugin_dir_path(__FILE__) . 'class-product-meta-boxes.php'; // No extra 'includes/'
-        $this->meta_boxes = new Advanced_Product_Manager_Meta_Boxes();  // Use the correct class name
+        require_once plugin_dir_path(__FILE__) . 'class-product-manager-meta-boxes.php'; // No extra 'includes/'
+        $this->meta_boxes = new Product_Manager_Meta_Boxes();  // Use the correct class name
     }
 
     private function init_columns()
@@ -53,4 +54,11 @@ class Product_Manager
         require_once plugin_dir_path(__FILE__) . 'class-admin-settings.php'; // No extra 'includes/'
         $this->settings = new Admin_Settings();  // Store the object for later use
     }
+
+    // private function init_admin_faultyStocks()
+    // {
+    //     // Corrected file path
+    //     require_once plugin_dir_path(__FILE__) . 'class-admin-faulty-stocks.php'; // No extra 'includes/'
+    //     $this->faultyStocks = new Class_admin_faulty_stocks();  // Store the object for later use
+    // }
 }
